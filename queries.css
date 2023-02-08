@@ -1,0 +1,22 @@
+@media only screen and (max-width: 80rem) {
+  body {
+    height: 250vh;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .column-card__section--text-box {
+    max-width: 24rem;
+    margin: 3rem 0 2.5rem;
+  }
+
+  .sedans {
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+}

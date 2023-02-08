@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  background-size: 100%;
+  background-position: top;
+  color: hsla(0, 0%, 100%, 0.75);
+  position: relative;
+  height: 100vh;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~-------GRID~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.grid {
+  display: grid;
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~COLUMN CARD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.column-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.column-card__section {
+  width: 31rem;
+  padding: 4rem;
+}
+
+.column-card__section--text-box {
+  max-width: 22rem;
+  margin: 2.5rem 0 8rem;
+}
+
+h3.column-card__section--category-title {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 2.5rem;
+}
+
+p.column-card__section--category-desc {
+  font-weight: 400;
+  line-height: 2.29rem;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 1.2rem 0 0 1.2rem;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 1.2rem 1.2rem 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~-------BTNS~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.btn {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 95%);
+  width: 12rem;
+  height: 3.9rem;
+  border: none;
+  border-radius: 5rem;
+}
+
+.btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~--HOVER STATES~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.btn:hover {
+  color: hsl(0, 0%, 95%);
+  border: 0.2rem solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.btn-sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.btn-suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+}
